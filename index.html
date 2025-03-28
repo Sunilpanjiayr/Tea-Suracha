@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Suracha - Tea Leaf Health Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguritm:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+    <div id="app" class="container mx-auto px-4">
+        <!-- Navigation -->
+        <nav class="bg-green-600 text-white p-4 shadow-md">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mr-3" viewBox="0 0 100 100" fill="none">
+                        <path d="M50 10C30 25 20 50 30 75C40 95 60 95 70 75C80 50 70 25 50 10Z" fill="#2ECC71"/>
+                        <path d="M40 65C45 70 55 70 60 65C65 60 65 50 50 40C35 50 35 60 40 65Z" fill="#27AE60"/>
+                        <circle cx="50" cy="52" r="10" fill="#16A085"/>
+                    </svg>
+                    <div>
+                        <h1 class="text-2xl font-bold">Tea Suracha</h1>
+                        <p class="text-sm text-green-200">চাহৰি স্বাস্থ্য নিৰীক্ষণ (Tea Health Monitoring)</p>
+                    </div>
+                </div>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-green-200">Home</a></li>
+                    <li><a href="#diseases" class="hover:text-green-200">Diseases</a></li>
+                    <li><a href="#quality" class="hover:text-green-200">Tea Quality</a></li>
+                    <li><a href="#detection" class="hover:text-green-200">Detection</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="bg-green-100 p-12 rounded-lg shadow-md text-center my-8">
+            <h2 class="text-4xl font-bold text-green-800 mb-4">Tea Leaf Health Monitoring System</h2>
+            <p class="text-xl text-green-600 mb-6">চাহৰি স্বাস্থ্য পৰীক্ষা আৰু ৰক্ষাকৰণ (Detect, Analyze, and Prevent)</p>
+            <button class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">
+                Start Disease Scan
+            </button>
+        </section>
+
+        <!-- Tea Leaf Diseases Section -->
+        <section id="diseases" class="my-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Common Tea Leaf Diseases</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Disease Card 1: Black Root Rot -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-700 mb-4">Black Root Rot</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="w-full rounded-md mb-4">
+                        <rect width="300" height="200" fill="#F0F0F0"/>
+                        <path d="M50 150 L100 50 L150 150 Z" fill="#8B4513" stroke="#000" stroke-width="2"/>
+                        <path d="M100 100 L150 20 L200 100 Z" fill="#A0522D" stroke="#000" stroke-width="2"/>
+                        <text x="150" y="180" text-anchor="middle" font-size="16" fill="#333">Black Root Rot</text>
+                    </svg>
+                    <p class="mb-4">A fungal disease causing root decay and plant weakening.</p>
+                    <h4 class="font-bold">Solutions:</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Improve soil drainage</li>
+                        <li>Use fungicide treatments</li>
+                        <li>Practice crop rotation</li>
+                    </ul>
+                </div>
+
+                <!-- Disease Card 2: Blister Blight -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-700 mb-4">Blister Blight</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="w-full rounded-md mb-4">
+                        <rect width="300" height="200" fill="#E6F2E6"/>
+                        <circle cx="150" cy="100" r="50" fill="#FFFFFF" stroke="#4CAF50" stroke-width="3" stroke-dasharray="10,5"/>
+                        <circle cx="120" cy="80" r="20" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2"/>
+                        <circle cx="180" cy="120" r="15" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2"/>
+                        <text x="150" y="180" text-anchor="middle" font-size="16" fill="#333">Blister Blight</text>
+                    </svg>
+                    <p class="mb-4">Causes white blister-like lesions on tea leaves, reducing photosynthesis.</p>
+                    <h4 class="font-bold">Solutions:</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Regular pruning</li>
+                        <li>Apply copper-based fungicides</li>
+                        <li>Maintain proper shade</li>
+                    </ul>
+                </div>
+
+                <!-- Disease Card 3: Red Rust -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-700 mb-4">Red Rust</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" class="w-full rounded-md mb-4">
+                        <rect width="300" height="200" fill="#FFF0F0"/>
+                        <path d="M50 100 Q150 50 250 100 T450 100" fill="none" stroke="#FF4500" stroke-width="10"/>
+                        <path d="M100 150 Q150 100 200 150 T300 150" fill="none" stroke="#FF6347" stroke-width="8"/>
+                        <text x="150" y="180" text-anchor="middle" font-size="16" fill="#333">Red Rust</text>
+                    </svg>
+                    <p class="mb-4">Algal disease causing reddish-brown patches on leaves.</p>
+                    <h4 class="font-bold">Solutions:</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Improve air circulation</li>
+                        <li>Remove infected leaves</li>
+                        <li>Maintain optimal humidity</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tea Leaf Quality Section -->
+        <section id="quality" class="bg-green-100 p-12 rounded-lg my-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Tea Leaf Quality Assessment</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quality Indicators</h3>
+                    <ul class="space-y-3">
+                        <li>✅ Leaf Color (পাতৰ ৰঙ)</li>
+                        <li>✅ Texture (পাতৰ অনুভৱ)</li>
+                        <li>✅ Size and Uniformity (আকাৰ আৰু সমানতা)</li>
+                        <li>✅ Moisture Content (আৰ্দ্ৰতাৰ পৰিমাণ)</li>
+                        <li>✅ Absence of Diseases (ৰোগৰ অনুপস্থিতি)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Grading Scale</h3>
+                    <div class="bg-white p-4 rounded-lg">
+                        <p>A: Premium Quality (শ্ৰেষ্ঠ গুণমান)</p>
+                        <p>B: Good Quality (ভাল গুণমান)</p>
+                        <p>C: Standard Quality (সাধাৰণ গুণমান)</p>
+                        <p>D: Low Quality (নিম্ন গুণমান)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disease Detection Section -->
+        <section id="detection" class="my-12 text-center">
+            <h2 class="text-3xl font-bold mb-8">AI-Powered Disease Detection</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md max-w-xl mx-auto">
+                <input type="file" class="hidden" id="imageUpload" accept="image/*">
+                <button onclick="document.getElementById('imageUpload').click()" 
+                        class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">
+                    Upload Tea Leaf Image (চাহৰি পাতৰ ছবি আপলোড কৰক)
+                </button>
+                <p class="mt-4 text-gray-600">Supported formats: JPG, PNG</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-green-800 text-white p-8">
+            <div class="container mx-auto grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Tea Suracha</h4>
+                    <p>চাহৰি কৃষকক উন্নত ৰোগ নিৰ্ণয় আৰু গুণমান পৰীক্ষাৰ প্ৰযুক্তিৰে সশক্ত কৰি তোলা (Empowering tea farmers with advanced disease detection)</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="hover:text-green-200">Home (মুখ্য পৃষ্ঠা)</a></li>
+                        <li><a href="#diseases" class="hover:text-green-200">Diseases (ৰোগ)</a></li>
+                        <li><a href="#quality" class="hover:text-green-200">Quality (গুণমান)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact (যোগাযোগ)</h4>
+                    <p>Email: support@teasuracha.com</p>
+                    <p>Phone: +91 1234567890</p>
+                </div>
+            </div>
+            <div class="text-center mt-8 border-t border-green-700 pt-4">
+                © 2024 Tea Suracha - চাহৰি স্বাস্থ্য নিৰীক্ষণ. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
